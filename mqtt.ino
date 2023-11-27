@@ -92,6 +92,11 @@ void loop() {
     int temperatura = dht.readTemperature();
     int umidade = dht.readHumidity();
 
+    Serial.print("Temperatura: ");
+    Serial.println(temperatura);
+    Serial.print("Umidade: ");
+    Serial.println(umidade);
+
     // Verifica se os dados foram lidos corretamente
     if (isnan(temperatura) || isnan(umidade)) {
       Serial.println("Erro ao ler os dados do sensor DHT");

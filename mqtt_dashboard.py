@@ -191,4 +191,4 @@ def update_graph(n):
 if __name__ == "__main__":
     port = 8000
     print(f"servidor rodando em: http://172.19.144.23:{port}")
-    app.run_server(debug=True, host="0.0.0.0", port=port)
+    app.run_server(debug=False, host="0.0.0.0", port=port)
